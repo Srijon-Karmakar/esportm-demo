@@ -199,7 +199,7 @@ import SignupCoach from "./pages/signup/coach";
 import SignupNutri from "./pages/signup/nutritionist";
 import SignupPitchManager from "./pages/signup/pitchManager";
 
-import AiAgent from "./components/AiAgent"
+import AiAgent from "./components/AiAGent"
 
 
 // about page 
