@@ -16,7 +16,7 @@ import {
 import axios from "axios";
 import Lottie from "lottie-react";
 import { UserContext } from "../context/UserContext";
-import sportbitVideo from "../assets/sportbit_dot_black.json";
+// import sportbitVideo from "../assets/sportbit_dot_black.json";
 
 // role images for login
 import playerImg from "/images/login/player.png";
@@ -144,11 +144,11 @@ export default function Login() {
         {/* LEFT / FORM */}
         <div className="relative p-6 sm:p-8 md:p-10">
           {/* logo */}
-          <div className="mb-4 flex items-center gap-2">
+          {/* <div className="mb-4 flex items-center gap-2">
             <div className="h-8 w-14">
               <Lottie animationData={sportbitVideo} loop />
             </div>
-          </div>
+          </div> */}
 
           <h2 className="mb-1 text-[26px] font-semibold text-slate-800">
             <span className="relative mr-2 inline-block">
