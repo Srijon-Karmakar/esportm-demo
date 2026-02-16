@@ -1,0 +1,34 @@
+.dashboard-container{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+.stats-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .stat-card {
+    background: #e0e0e0;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #bebebe, -5px -5px 15px #ffffff;
+  }
+  
+  .stat-card h3 {
+    margin-bottom: 15px;
+  }
+  
+  .leaderboard {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .leaderboard th, .leaderboard td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+  

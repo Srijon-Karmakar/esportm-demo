@@ -1,0 +1,119 @@
+:root {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--page-text);
+  }
+  * {
+    box-sizing: border-box;
+  }
+  body,html,#root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: var(--bg-color);
+    color: var(--page-text);
+  }
+  .app-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+  }
+  .sidebar {
+    width: 250px;
+    /* background-color: var(--sidebar-bg); */
+    background-color:linear-gradient(to bottom, #000000, #56ab2f);
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.15);
+  }
+  .sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .sidebar-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 15px 20px;
+    color: var(--sidebar-text);
+    font-weight: 600;
+    border-left: 4px solid transparent;
+    transition: background-color 0.3s, color 0.3s, border-left-color 0.3s;
+  }
+  .sidebar-link .icon {
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sidebar-link:hover {
+    color: var(--link-hover);
+    background-color: rgba(255,255,255,0.1);
+  }
+  .active-link {
+    color: var(--sidebar-text-active);
+    background-color: var(--link-hover);
+    border-left-color: #ffffff;
+    font-weight: 700;
+  }
+  .content-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--page-bg);
+  }
+  .topbar {
+    height: 50px;
+    background-color: var(--topbar-bg);
+    color: var(--topbar-text);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    user-select: none;
+  }
+  .topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .theme-toggle {
+    background-color: var(--toggle-bg);
+    border: none;
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--toggle-thumb);
+    transition: background-color 0.3s;
+  }
+  .theme-toggle:hover {
+    filter: brightness(0.8);
+  }
+  .player-name {
+    font-weight: 600;
+    font-size: 14px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 150px;
+  }
+  main {
+    flex: 1;
+    padding: 25px 30px;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--page-text);
+  }
+  
+  

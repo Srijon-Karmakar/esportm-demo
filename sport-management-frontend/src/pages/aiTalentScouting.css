@@ -1,0 +1,198 @@
+.ai-scouting-page {
+  position: relative;
+  overflow-x: hidden;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Segoe UI', sans-serif;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.light {
+  color: #ffffff;
+  background-color: #130023dc;
+}
+
+.dark {
+  color: #f4f4f4;
+  background-color: #121212;
+}
+
+/* Video Background */
+.bg-video {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  opacity: 1.8;
+  pointer-events: none;
+}
+
+.logo {
+  position: relative;
+  top: -15%;
+}
+
+/* Gradient Overlay */
+.gradient-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: radial-gradient(circle at center, rgba(0, 123, 255, 0.4), transparent);
+  z-index: -10;
+  opacity: 0.3;
+}
+
+/* 3D Background Element */
+.bg-3d-glow {
+  position: absolute;
+  bottom: -150px;
+  right: -100px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, #007bff80, transparent);
+  border-radius: 50%;
+  filter: blur(100px);
+  z-index: -11;
+  opacity: 0.3;
+}
+
+.scout-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  margin-bottom: -120px;
+  z-index: 500;
+}
+
+/* .scout-logo {
+  height: 40px;
+  z-index: 50;
+} */
+
+.nav-btns {
+  display: flex;
+  gap: 20px;
+  z-index: 50;
+  color: white;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+  color: inherit;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  min-height: 90vh;
+  text-align: center;
+  
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  z-index: 50;
+  color: white;
+  margin-top: 10;
+}
+
+.hero-section p {
+  font-size: 1.6rem;
+  max-width: 700px;
+  margin-bottom: 30px;
+  z-index: 50;
+  color: white;
+}
+
+.primary-btn {
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  background-color: #e2ca40;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 98px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  z-index: 50;
+}
+
+.primary-btn:hover {
+  background-color: #2ab300;
+}
+
+/* Features */
+.features-section {
+  padding: 60px 40px;
+  background: transparent;
+}
+
+.features-section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: rgb(204, 188, 244);
+}
+
+.features-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.feature-card {
+  background-color: rgba(255, 255, 255, 0.07);
+  border-radius: 12px;
+  padding: 25px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.feature-card .icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.feature-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+.scouting-details {
+  padding: 80px 40px;
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.detail-section {
+  max-width: 900px;
+  margin: 60px auto;
+  background: rgba(255,255,255,0.05);
+  padding: 30px;
+  border-radius: 10px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.detail-section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.detail-section p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+

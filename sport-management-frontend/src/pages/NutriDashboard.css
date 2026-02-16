@@ -1,0 +1,112 @@
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    background: #e0e5ec;
+    color: #333;
+  }
+  
+  .main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .dashboard-content {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background: #e0e5ec;
+    box-shadow: 8px 8px 16px #bebebe, -8px -8px 16px #ffffff;
+  }
+  
+  /* .stats-section {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  } */
+  .stats-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+    /* flex-wrap: wrap; */
+  }
+  
+  /* .neumorphic-card {
+    background: #e0e5ec;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 12px #bebebe, -6px -6px 12px #ffffff;
+    transition: transform 0.2s ease;
+  } */
+  .neumorphic-card {
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* optional */
+    border-radius: 12px;
+    padding: 20px;
+    flex: 1;
+    min-width: 220px;
+    max-width: 300px;
+    text-align: center;
+  }
+  .stat-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    flex: 1;
+    min-width: 220px;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  
+  
+  .neumorphic-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .gradient-text {
+    background: linear-gradient(90deg, #7f00ff, #e100ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .charts-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .chart-card {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 12px #bebebe, -6px -6px 12px #ffffff;
+    background: #e0e5ec;
+  }
+  .charts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+    margin-top: 30px;
+  }
+  
+  .tiny-chart {
+    padding: 16px;
+    border-radius: 16px;
+    background: #e0e5ec;
+    box-shadow: 6px 6px 12px #bebebe, -6px -6px 12px #ffffff;
+    text-align: center;
+  }
+  
+  .tiny-chart h4 {
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+  

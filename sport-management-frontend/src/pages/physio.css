@@ -1,0 +1,125 @@
+.physio-page {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #ffffff;
+    color: #2a2a2a;
+    /* min-height:100vh; */
+    overflow-x: hidden !important;
+  }
+  
+  /* Hero Section */
+  .physio-hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+    background: linear-gradient(120deg, #cce7ff, #e3f2fd);
+  }
+  
+  .hero-content {
+    flex: 1;
+    min-width: 280px;
+    max-width: 500px;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    color: #003b73;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    line-height: 1.6;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .btn {
+    padding: 12px 26px;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+  }
+  
+  .book {
+    background-color: #0057a3;
+    color: white;
+  }
+  
+  .book:hover {
+    background-color: #003b73;
+  }
+  
+  .subscribe {
+    background-color: white;
+    color: #0057a3;
+    border: 2px solid #0057a3;
+  }
+  
+  .subscribe:hover {
+    background-color: #d8ecff;
+  }
+  
+  .hero-image {
+    flex: 1;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+  
+  /* Features Section */
+  .physio-features {
+    padding: 60px 10%;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .physio-features h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    color: #003b73;
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+  }
+  
+  .feature-card {
+    background: #f0faff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.07);
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .feature-card h3 {
+    color: #0070c9;
+    margin-bottom: 12px;
+  }
+  
+  /* Footer */
+  .physio-footer {
+    background-color: #003b73;
+    color: white;
+    text-align: center;
+    padding: 20px 10%;
+  }
+  

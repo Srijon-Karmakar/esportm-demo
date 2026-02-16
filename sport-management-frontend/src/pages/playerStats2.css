@@ -1,0 +1,119 @@
+:root {
+    --bg: #e0e5ec;
+    --shadow-light: #ffffff;
+    --shadow-dark: #a3b1c6;
+  }
+  
+  .dashboard-main {
+    padding: 4rem;
+    background-color: var(--bg);
+    height: 100vh;
+    overflow-y: auto;
+    margin-left: 240px;
+
+
+  }
+  
+  .neumorphic {
+    background: var(--bg);
+    box-shadow: 8px 8px 16px var(--shadow-dark),
+                -8px -8px 16px var(--shadow-light);
+    border-radius: 20px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .player-card {
+    max-width: 300px;
+    margin-top: -40px;
+  }
+  
+  .profile-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .profile-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    margin: .5rem 0;
+  }
+  
+  .toggles .toggle-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.3rem 0;
+  }
+  
+  .login-btn {
+    width: 100%;
+    padding: 0.6rem;
+    border: none;
+    background: #6a5acd;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  .kpi-row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .kpi-card {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .kpi-card .change.up {
+    color: green;
+  }
+  .kpi-card .change.down {
+    color: red;
+  }
+  
+  .chart, .comments, .match-card {
+    max-width: 700px;
+  }
+  .neumorphic comments {
+    list-style: none;
+  }
+  
+  .match-card .teams {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .match-card .teams img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .news-strip {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+  }
+  
+  .news-card {
+    min-width: 250px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  .news-card img {
+    width: 40px;
+    height: 40px;
+  }
+  

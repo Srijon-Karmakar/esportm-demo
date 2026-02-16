@@ -1,0 +1,13 @@
+.orb-container {
+    position: relative;
+    z-index: 2;
+    width: 90%;
+    height: 90%;
+  }
+  .orb-container canvas {
+    transform: scale(1); /* Increase value for larger size */
+    transform-origin: center center;
+    margin-top: 0;
+    /* margin-bottom: 80px; */
+  }
+  

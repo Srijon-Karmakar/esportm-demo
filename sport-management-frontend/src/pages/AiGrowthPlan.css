@@ -1,0 +1,87 @@
+/* src/pages/AiGrowthPlanInteractive.css */
+.growthai-wrapper {
+  display: flex;
+  min-height: 100vh;
+  background: #e0e5ec;
+  position: absolute;
+  top: 0; left: 27%;
+}
+
+.growthai-main {
+  flex: 1;
+  padding: 30px;
+}
+
+.growthai-card {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 8px 8px 16px #bfc4cc, -8px -8px 16px #fff;
+  background: #e0e5ec;
+}
+
+.growthai-card h3 {
+  margin-bottom: 10px;
+}
+
+.subtext {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.growthai-input {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  background: #f3f6fa;
+  box-shadow: inset 4px 4px 8px #cbd1d8, inset -4px -4px 8px #ffffff;
+  resize: vertical;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.generate-btn {
+  padding: 12px 30px;
+  font-weight: bold;
+  border-radius: 12px;
+  border: none;
+  background: #e0e5ec;
+  box-shadow: 6px 6px 12px #cbd1d8, -6px -6px 12px #ffffff;
+  cursor: pointer;
+  transition: 0.3s;
+  color: rgb(139, 71, 167)
+  
+}
+
+.generate-btn:hover {
+  box-shadow: inset 4px 4px 8px #cbd1d8, inset -4px -4px 8px #ffffff;
+}
+
+.growthai-response {
+  margin-top: 30px;
+  text-align: left;
+  white-space: pre-wrap;
+  padding: 20px;
+  background: #e0e5ec;
+  border-radius: 16px;
+  box-shadow: 8px 8px 16px #cbd1d8, -8px -8px 16px #ffffff;
+  font-size: 15px;
+  color: #222;
+  max-height: 300px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+.growthai-response::-webkit-scrollbar {
+  width: 6px;
+}
+
+.growthai-response::-webkit-scrollbar-thumb {
+  background-color: #bfc4cc;
+  border-radius: 12px;
+}
+

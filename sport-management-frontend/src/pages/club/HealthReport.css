@@ -1,0 +1,87 @@
+/* Top-level layout */
+.dashboard-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;               /* Full screen */
+    /* overflow: hidden; */
+  }
+  
+  /* Sidebar: fixed width */
+  .ClubSidebar {
+    width: 250px;
+    background: #e0e0e0;
+    height: 100vh;
+    flex-shrink: 0;
+  }
+  
+  /* Main content: fills rest, vertical column */
+  .main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: scroll;            /* child handles scroll */
+  }
+  
+  /* Header stays on top */
+  .main-content > .NmdHeader {
+    flex-shrink: 0;
+  }
+  
+  /* This is the scrollable area */
+  .health-page {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    background: #dcdcdc;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  /* Neumorphism card blocks */
+  .summary-chart,
+  .trend-chart,
+  .player-health-table,
+  .health-logs {
+    background: #e0e0e0;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 16px #bebebe, -8px -8px 16px #ffffff;
+  }
+  
+  /* Table styles */
+  .player-health-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .player-health-table th,
+  .player-health-table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  /* Logs */
+  .health-logs ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .health-logs li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  /* Scrollbar (optional) */
+  .health-page::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .health-page::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+    border-radius: 10px;
+  }
+  

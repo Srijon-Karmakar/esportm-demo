@@ -1,0 +1,280 @@
+/* Light/Dark Variables */
+:root {
+    --bg: #e0e5ec;
+    --fg: #333;
+    --shadow1: #bfc4cc;
+    --shadow2: #ffffff;
+  }
+  .dark {
+    --bg: #2e303c;
+    --fg: #ddd;
+    --shadow1: #202231;
+    --shadow2: #40424f;
+  }
+  
+  .club-page {
+    background: var(--bg);
+    color: var(--fg);
+    /* min-height: 100vh; */
+    font-family: 'Segoe UI', sans-serif;
+    /* display: flex;
+    flex-direction: column; */
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  /* Header */
+  .club-header {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* box-shadow: 6px 6px 12px var(--shadow1), -6px -6px 12px var(--shadow2); */
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  .club-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    background: none;
+  }
+  
+  /* Controls */
+  .club-controls .neumorphic-btn {
+    margin-left: 1rem;
+  }
+  
+  /* Main Sections */
+  .club-main {
+    flex: 1;
+    padding: 2rem;
+  }
+  .hero-section {
+    text-align: center;
+    padding: 3rem 2rem 0;
+    margin-bottom: 2rem;
+    margin-top: -13rem;
+    box-shadow:  10px 6px 12px var(--shadow1),  -8px -8px 12px var(--shadow2);
+  }
+  .gradient-title {
+    font-size: 2.5rem;
+    background: linear-gradient(90deg, #8e4ad6, #610d78);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 2rem;
+    
+  }
+  
+  .club-main p{
+    background: linear-gradient(90deg, #8e4ad6, #610d78);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .cta-btn {
+    margin-top: 1.5rem;
+    padding: 12px 28px;
+    font-size: 1rem;
+    background: linear-gradient(90deg, #8e4ad6, #610d78);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: none;
+  }
+  .club-controls img{
+    height: 20px;
+    width: 20px;
+  }
+  
+  /* Cards */
+  .services-section {
+    margin-bottom: 2rem;
+  }
+  .services-section h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  .service-card {
+    width: 180px;
+    padding: 1rem;
+    text-align: center;
+    min-height: 280px; /* Adjust based on content */
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .card-description {
+    font-size: 0.9rem;
+    color: var(--fg);
+    opacity: 0.8;
+    margin-top: 0.5rem;
+    line-height: 1.4;
+    padding: 0 0.5rem;
+  }
+  
+  .service-card img {
+    /* width: 80px;
+    height: 80px;
+    margin-bottom: 0.75rem; */
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    /* Add neumorphic inset effect */
+    box-shadow: inset 3px 3px 6px var(--shadow1),
+                inset -3px -3px 6px var(--shadow2);
+    padding: 8px;
+    background: var(--bg);
+    transition: transform 0.3s ease;
+  }
+  .service-card:hover img {
+    transform: scale(1.02);
+  }
+  
+  .service-card h3 {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: var(--fg);
+  }
+  
+  /* Feature Section */
+  .feature-section {
+    padding: 2rem;
+    margin-bottom: -2rem;
+    text-align: center;
+  }
+  .feature-section button{
+    background: linear-gradient(90deg, #8e4ad6, #610d78);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 2rem;
+  }
+  
+  /* Footer */
+  .club-footer {
+    padding: 1.5rem 2rem;
+    text-align: center;
+    box-shadow: 6px 6px 12px var(--shadow1), -6px -6px 12px var(--shadow2);
+    margin-top: 1rem;
+  }
+  .club-footer .quick-links {
+    margin-bottom: 3rem;
+  }
+  .club-footer .quick-links a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: var(--fg);
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 8px;
+    box-shadow: inset 4px 4px 8px var(--shadow1), inset -4px -4px 8px var(--shadow2);
+    transition: all 0.2s ease;
+  }
+  
+  .club-footer .quick-links a:hover {
+    box-shadow: 6px 6px 12px var(--shadow1), -6px -6px 12px var(--shadow2);
+  }
+  .club-footer p {
+    font-size: 0.9rem;
+    color: var(--fg);
+  }
+  
+  
+  .hero-section {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .glass-glow-circle {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(188, 53, 255, 0.4), rgba(212, 0, 255, 0.05));
+    border-radius: 50%;
+    filter: blur(60px);
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+  .hero-section > *:not(.glass-glow-circle) {
+    position: relative;
+    z-index: 1;
+  }
+  /* Container for all glow effects */
+  .background-glow-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  
+  /* Shared circle style */
+  .glow-circle {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(210, 76, 255, 0.292), rgba(189, 76, 255, 0.05));
+    filter: blur(40px);
+    opacity: 0.7;
+  }
+  
+  /* Circle sizes */
+  .glow-circle.small {
+    width: 100px;
+    height: 100px;
+  }
+  .glow-circle.medium {
+    width: 350px;
+    height: 350px;
+  }
+  .glow-circle.large {
+    width: 600px;
+    height: 600px;
+  }
+  
+  /* Positioning */
+  .top-left {
+    top: 5%;
+    left: 5%;
+  }
+  .top-right {
+    top: 10%;
+    right: 10%;
+  }
+  .bottom-left {
+    bottom: 5%;
+    left: 10%;
+  }
+  .bottom-right {
+    bottom: 10%;
+    right: 5%;
+  }
+  .center {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #clubDashBtn{
+    color: rgb(255, 0, 0) !important;
+    background-color: rgb(241, 214, 251);
+    -webkit-text-fill-color: rgb(81, 9, 86) !important; /* 🔥 This is critical */
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+  }
+  
+  

@@ -1,0 +1,122 @@
+.consult-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background: #e0e0e0;
+  }
+  
+  .consult-main {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .consult-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .consult-filters {
+    display: flex;
+    gap: 10px;
+  }
+  .consult-filters input,
+  .consult-filters select {
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    background: #e0e0e0;
+    box-shadow: inset 5px 5px 10px #bebebe,
+                inset -5px -5px 10px #ffffff;
+  }
+  
+  .consult-filters button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 12px;
+    background: #e0e0e0;
+    box-shadow: 5px 5px 10px #bebebe,
+                -5px -5px 10px #ffffff;
+    cursor: pointer;
+  }
+  
+  .consult-stats {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .consult-card {
+    flex: 1;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    background: #e0e0e0;
+    box-shadow: 7px 7px 14px #bebebe,
+                -7px -7px 14px #ffffff;
+  }
+  
+  .consult-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 5px 5px 10px #bebebe,
+                -5px -5px 10px #ffffff;
+  }
+  
+  .consult-table th, .consult-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .consult-btn {
+    padding: 5px 10px;
+    border: none;
+    margin-right: 5px;
+    border-radius: 8px;
+    background: #e0e0e0;
+    box-shadow: 4px 4px 8px #bebebe,
+                -4px -4px 8px #ffffff;
+    cursor: pointer;
+  }
+  
+  .consult-actions button,
+  .consult-notes button,
+  .consult-availability button,
+  .consult-reminders button {
+    padding: 10px 15px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 10px;
+    background: #e0e0e0;
+    box-shadow: 4px 4px 8px #bebebe,
+                -4px -4px 8px #ffffff;
+  }
+  
+  .consult-notes textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+    background: #e0e0e0;
+    box-shadow: inset 4px 4px 8px #bebebe,
+                inset -4px -4px 8px #ffffff;
+  }
+  
+  .consult-feedback ul {
+    padding-left: 20px;
+  }
+  
+  .consult-availability input,
+  .consult-reminders input {
+    padding: 10px;
+    margin-right: 5px;
+    border-radius: 10px;
+    border: none;
+    background: #e0e0e0;
+    box-shadow: inset 4px 4px 8px #bebebe,
+                inset -4px -4px 8px #ffffff;
+  }
+  

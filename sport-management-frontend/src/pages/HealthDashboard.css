@@ -1,0 +1,312 @@
+/* :root {
+  --bg-color: #e0e5ec;
+  --shadow-light: #ffffff;
+  --shadow-dark: #a3b1c6;
+  --text-color: #333;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color);
+  overflow-x: hidden;
+  color: #333;
+}
+
+.health-page {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  
+}
+
+.health-container {
+  flex: 1;
+  padding: 3.5rem;
+  height: 100vh;
+  overflow-y: auto;
+  margin-top: -40px;
+}
+
+.neumorphic {
+  background: var(--bg-color);
+  box-shadow: 8px 8px 16px var(--shadow-dark),
+              -8px -8px 16px var(--shadow-light);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+.neumorphic:hover {
+  transform: translateY(-2px);
+  box-shadow: 4px 4px 8px #b8b9be, -4px -4px 8px #ffffff;
+}
+
+.health-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.player-details {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.player-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: inset 4px 4px 8px #cbd1dc,
+              inset -4px -4px 8px #ffffff;
+}
+
+.section-title {
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.metric-card {
+  text-align: center;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.metric-icon {
+  font-size: 2.2rem;
+  margin-bottom: 0.8rem;
+}
+.metric-icon img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+
+.logo img {
+  max-width: 150px; 
+  height: auto; 
+  display: block; 
+  margin: 0 auto; 
+}
+.logo video {
+  max-width: 150px;
+  height: auto; 
+  display: block; 
+  margin: 0 auto; 
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.logo{
+  position: relative;
+  top: -15%;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: -2rem;
+}
+
+.chart-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.chart-card {
+  flex: 1 1 400px;
+  padding: 1.5rem;
+  text-align: center;
+  max-width: 600px;
+}
+
+.status-banner {
+  padding: 1rem;
+  text-align: center;
+  font-weight: 600;
+  color: green;
+  margin-top: 2rem;
+} */
+
+
+:root {
+  --bg-color: #e0e5ec;
+  --shadow-light: #ffffff;
+  --shadow-dark: #a3b1c6;
+  --text-color: #333;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color);
+  overflow-x: hidden;
+  color: #333;
+}
+
+.health-page {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  
+}
+
+.health-container {
+  flex: 1;
+  padding: 3.5rem;
+  height: 100vh;
+  overflow-y: auto;
+  margin-top: -40px;
+}
+
+.neumorphic {
+  background: var(--bg-color);
+  box-shadow: 8px 8px 16px var(--shadow-dark),
+              -8px -8px 16px var(--shadow-light);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+.neumorphic:hover {
+  transform: translateY(-2px);
+  box-shadow: 4px 4px 8px #b8b9be, -4px -4px 8px #ffffff;
+}
+
+.health-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.player-details {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.player-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: inset 4px 4px 8px #cbd1dc,
+              inset -4px -4px 8px #ffffff;
+}
+
+.section-title {
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.metric-card {
+  text-align: center;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.metric-icon {
+  font-size: 2.2rem;
+  margin-bottom: 0.8rem;
+}
+.metric-icon img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+
+.logo img {
+  max-width: 150px; 
+  height: auto; 
+  display: block; 
+  margin: 0 auto; 
+}
+.logo video {
+  max-width: 150px;
+  height: auto; 
+  display: block; 
+  margin: 0 auto; 
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.logo{
+  position: relative;
+  top: -15%;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: -2rem;
+}
+
+.chart-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.chart-card {
+  flex: 1 1 300px; /* Reduced from 400px */
+  padding: 1.2rem; /* Reduced from 1.5rem */
+  text-align: center;
+  max-width: 450px; /* Reduced from 600px */
+  min-height: 300px; /* Add minimum height */
+}
+.chart-container {
+  width: 100%;
+  height: 250px; /* Set specific height for charts */
+  margin: 0 auto;
+}
+.chart-card canvas {
+  max-width: 100%;
+  height: auto !important;
+}
+.status-banner {
+  padding: 1rem;
+  text-align: center;
+  font-weight: 600;
+  color: green;
+  margin-top: 2rem;
+}
+
+.chart-container {
+  height: 300px;
+  padding: 15px;
+  position: relative;
+}
+
+.projects-chart,
+.gantt-chart {
+  min-height: 400px;
+}
+
+/* Update existing chart styles */
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 0 15px;
+}

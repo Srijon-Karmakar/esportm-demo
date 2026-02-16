@@ -1,0 +1,210 @@
+/* src/pages/PlayerProfile.css */
+
+.profile-wrapper {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background: #e0e5ec;
+    font-family: 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+  }
+  
+  /* .fan-sidebar {
+    width: 250px;
+    min-width: 250px;
+    height: 100%;
+    background: #e0e5ec;
+    box-shadow: 8px 8px 16px #c8ccd2, -8px -8px 16px #f8faff;
+    border-radius: 0 20px 20px 0;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  } */
+  
+  .profile-main {
+    flex: 1;
+    padding: 0 30px;
+    overflow-y: auto;
+    width: 100vw;
+    margin-left: 20px;
+  }
+  
+  .neumorphic {
+    background: #e0e5ec;
+    border-radius: 20px;
+    box-shadow: 8px 8px 16px #c8ccd2, -8px -8px 16px #f8faff;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .profile-header {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  .profile-actions {
+    margin-left: 850px;
+  }
+  .profile-details{
+    margin-top:50px;
+  }
+  
+  .profile-image img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .profile-actions {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .profile-actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    background: #e0e5ec;
+    box-shadow: 4px 4px 8px #c8ccd2, -4px -4px 8px #f8faff;
+    transition: all 0.3s ease;
+  }
+  
+  .profile-actions button:hover {
+    transform: scale(1.05);
+  }
+  
+  .profile-details h2 {
+    margin-bottom: 10px;
+  }
+  
+  .profile-details p {
+    margin: 6px 0;
+    font-size: 15px;
+  }
+  
+  .profile-stats-video {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    /* align-items: stretch;  */
+  }
+  
+  .player-stats, .player-video {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .player-stats ul {
+    padding-left: 18px;
+  }
+  
+  .player-stats li {
+    margin-bottom: 8px;
+  }
+  
+  .gradient-text {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .details-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .details-header img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .edit-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    background: #e0e5ec;
+    box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+  }
+  
+  .edit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 4px 4px 8px #b8b9be, -4px -4px 8px #ffffff;
+  }
+  
+  .edit-btn:active {
+    box-shadow: inset 2px 2px 4px #b8b9be, inset -2px -2px 4px #ffffff;
+  }
+
+
+  /* updated 19 july 2025 */
+  .player-journey {
+    /* margin-top: 2rem; */
+    padding: 1.5rem;
+    
+    
+  }
+  
+  .player-journey ul {
+    /* list-style-type: none; */
+    list-style-type: decimal;
+    padding: 0;
+    margin-bottom: 200px;
+    
+  }
+  
+  .player-journey li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .profile-card {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .player-stats ul{
+    margin-bottom: 180px;
+   }
+  
+  /* make a os which will have the most customisation features
+
+  /* Health Stats Card */
+.player-health {
+  padding: 1.5rem;
+  background: #e0e5ec;
+  border-radius: 20px;
+  box-shadow: 8px 8px 16px #c8ccd2, -8px -8px 16px #f8faff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 300px;
+  flex: 1;
+}
+
+.player-health h3 {
+  margin-bottom: 1rem;
+}
+
+.player-health ul {
+  list-style-type: square;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.player-health li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}

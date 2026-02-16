@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  background: #d9e4cc;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.dashboard {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  padding: 10px 50px;
+}
+
+.sidebar {
+  width: 70px;
+  background: #ebe3ee;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+  gap: 20px;
+  box-shadow: inset 5px 5px 10px #cad3c4, inset -5px -5px 10px #ffffff;
+}
+
+.sidebar-icon,
+.sidebar-avatar {
+  width: 35px;
+  height: 35px;
+  background: #dc98eb;
+  border-radius: 50%;
+  box-shadow: 4px 4px 8px #bfc8b6, -4px -4px 8px #ffffff;
+}
+
+.sidebar-bottom {
+  margin-top: auto;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.neumo-card {
+  background: #e8f1dd;
+  border-radius: 20px;
+  box-shadow: 8px 8px 15px #cad3c4, -8px -8px 15px #ffffff;
+  padding: 20px;
+}
+
+.chart-card {
+  flex: 2;
+}
+
+.recommendation-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.bar-chart {
+  display: flex;
+  gap: 4px;
+  align-items: flex-end;
+  height: 120px;
+  margin-top: 20px;
+}
+
+.bar {
+  width: 8px;
+  background: #8a409f;
+  border-radius: 4px;
+}
+
+.chart-label {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.neumo-button {
+  background: #9154c3;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 4px 4px 8px #5d387a, -4px -4px 8px #f3befa;
+  transition: transform 0.2s ease;
+}
+
+.neumo-button:hover {
+  transform: scale(1.05);
+}
+
+.stats-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.stat h4 {
+  margin: 0;
+  font-size: 24px;
+  color: #6b4977;
+}
+
+.stat p {
+  margin: 0;
+  font-size: 12px;
+  color: #333;
+}
+
+.bar-percentages {
+  display: flex;
+  gap: 8px;
+  align-items: flex-end;
+}
+
+.circle-card {
+  flex: 1;
+  text-align: center;
+}
+
+.circle {
+  width: 80px;
+  height: 80px;
+  margin: 10px auto 0;
+  border-radius: 50%;
+  background: #e8f1dd;
+  box-shadow: inset 4px 4px 10px #cad3c4, inset -4px -4px 10px #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #7a47a3;
+}
+
+.bottom-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.image-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}

@@ -1,0 +1,93 @@
+.treatment-plan-page {
+    display: flex;
+    background: #e0e0e0;
+    height: 100vh;
+    width: 100vw;
+    font-family: Arial, sans-serif;
+  }
+  
+  .treatment-plan-main {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .treatment-plan-content {
+    padding: 20px;
+    background: transparent;
+    box-shadow: 8px 8px 15px #bebebe,
+                -8px -8px 15px #ffffff;
+    border-radius: 15px;
+  }
+  
+  .treatment-plan-content h2 {
+    margin-bottom: 15px;
+  }
+  
+  .treatment-plan-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+  }
+  
+  .treatment-plan-table th, 
+  .treatment-plan-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+  
+  .treatment-plan-table th {
+    background: transparent;
+  }
+  
+  .edit-btn, .delete-btn, .add-btn {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 8px;
+    background: transparent;
+    box-shadow: 5px 5px 10px #bebebe,
+                -5px -5px 10px #ffffff;
+  }
+  
+  .edit-btn:hover {
+    background: #d1ffd6;
+  }
+  
+  .delete-btn:hover {
+    background: #ffd6d6;
+  }
+  
+  .add-btn:hover {
+    background: #d6e8ff;
+  }
+  
+  .treatment-plan-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 15px;
+  }
+  
+  .treatment-plan-form input,
+  .treatment-plan-form textarea {
+    background: transparent;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1),
+                inset -5px -5px 10px rgba(255,255,255,0.7);
+  }
+  
+  .treatment-plan-form textarea {
+    min-height: 80px;
+    resize: none;
+  }
+  
+  .treatment-plan-form button {
+    grid-column: span 2;
+    justify-self: start;
+  }
+  
+  

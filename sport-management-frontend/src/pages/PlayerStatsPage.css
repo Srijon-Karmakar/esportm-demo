@@ -1,0 +1,31 @@
+.page-container {
+    display: flex;
+  }
+  
+  /* Give space for the sidebar */
+  .main-content {
+    margin-left: 220px;  /* Adjust based on sidebar width + padding */
+    padding: 20px;
+    width: 100vw;
+  }
+  
+  .main-content h1 {
+    margin-top: 0;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  

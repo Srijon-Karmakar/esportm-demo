@@ -1,0 +1,153 @@
+/* src/styles/StatsPage.css */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #e0e5ec;
+
+  }
+  
+  .stats-page-wrapper {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .stats-main {
+    flex: 1;
+    padding: 0 30px;
+    background: #e0e5ec;
+    color: #333;
+    margin-left: 20px;
+    overflow-x: hidden;
+  }
+  .profile-actions {
+    margin-left: 850px;
+  }
+  
+  /* .page-title {
+    margin-bottom: 20px;
+  } */
+  .profile-actions {
+    margin-left: 830px;
+    margin-bottom: -100px;
+    margin-top: 10px;
+  }
+  .neumorphic {
+    background: #e0e5ec;
+    border-radius: 16px;
+    box-shadow: 8px 8px 16px #c8ccd2, -8px -8px 16px #f8faff;
+    padding: 20px;
+  }
+  
+  .overall-cards {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+    margin-top: 45px;
+  }
+  
+  .overall-card {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .overall-card .icon {
+    font-size: 28px;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .overall-card .label {
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+  
+  .overall-card .value {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .charts-section {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  /* .chart-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  } */
+  
+  .filters button {
+    margin-left: 8px;
+    background: #f0f4f8;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .fan-chart, .income-chart {
+    flex: 1;
+  }
+  
+  .bar-chart-placeholder {
+    height: 200px;
+    background: #d3d9e1;
+    border-radius: 12px;
+    text-align: center;
+    line-height: 200px;
+  }
+  
+  .circle-chart {
+    text-align: center;
+  }
+  
+  .circle {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 10px;
+    background: #f0f0f0;
+    border-radius: 50%;
+    line-height: 120px;
+    font-weight: bold;
+    box-shadow: inset 6px 6px 12px #c8ccd2, inset -6px -6px 12px #f8faff;
+  }
+  
+  .legends p {
+    margin: 4px 0;
+    font-size: 14px;
+  }
+  
+  .table-section {
+    overflow-x: auto;
+  }
+  
+  .table-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #f0f4f8;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+  }
+  
+  thead {
+    background: #e0e5ec;
+    font-weight: bold;
+  }
+  .neumoheader {
+    margin-top: -20px;
+  }
+  

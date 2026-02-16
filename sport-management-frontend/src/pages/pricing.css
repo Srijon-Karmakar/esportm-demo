@@ -1,0 +1,115 @@
+.pricing-page {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* .background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+} */
+
+
+
+
+.pricing-page {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #d4d4d4;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    /* background: url(../assets/pricingPageBg.png); */
+  }
+  
+  .pricing-title {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+    z-index: 300;
+    position: relative;
+  }
+  
+  .pricing-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #000000;
+    z-index: 300;
+    position: relative;
+  }
+  
+  .pricing-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .plan-card {
+    background: rgba(255, 255, 255, 0.676);
+    color: black;
+    padding: 30px;
+    width: 300px;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    backdrop-filter: blur(10px);
+  }
+  
+  .plan-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .plan-card.highlighted {
+    border: 2px solid #0000002e;
+    background-color: #ffffffc0;
+  }
+  
+  .price {
+    font-size: 2rem;
+    margin: 15px 0;
+    color: #117300;
+    font-weight: bold;
+  }
+  
+  .plan-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+  }
+  
+  .plan-card li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+  }
+  
+  .plan-btn {
+    background-color: #0070f3;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .plan-btn:hover {
+    background-color: #005fcc;
+  }
+  
+
+  /* update for viddeo */
+  

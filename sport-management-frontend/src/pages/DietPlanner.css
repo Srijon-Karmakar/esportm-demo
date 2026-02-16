@@ -1,0 +1,110 @@
+:root {
+    --bg: #e0e5ec;
+    --shadow-light: #ffffff;
+    --shadow-dark: #a3b1c6;
+    --text: #333;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .diet-container {
+    padding: 2rem;
+    max-width: 700px;
+    margin: auto;
+    color: var(--text);
+  }
+  
+  .diet-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #222;
+    font-size: 2.2rem;
+  }
+  
+  .neumorphic {
+    background: var(--bg);
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px var(--shadow-dark),
+                -10px -10px 20px var(--shadow-light);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .goal-selector label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .goal-selector select {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 10px;
+    background: var(--bg);
+    box-shadow: inset 4px 4px 8px var(--shadow-dark),
+                inset -4px -4px 8px var(--shadow-light);
+  }
+  
+  .macro-box ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1rem;
+  }
+  
+  .macro-box li {
+    padding: 0.3rem 0;
+  }
+  
+  .meal-planner ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+  }
+  
+  .meal-planner li {
+    padding: 0.5rem;
+    background: var(--bg);
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    box-shadow: inset 2px 2px 5px var(--shadow-dark),
+                inset -2px -2px 5px var(--shadow-light);
+  }
+  
+  .meal-input {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .meal-input input {
+    flex: 1;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 10px;
+    background: var(--bg);
+    box-shadow: inset 3px 3px 6px var(--shadow-dark),
+                inset -3px -3px 6px var(--shadow-light);
+  }
+  
+  .meal-input button {
+    padding: 0.5rem 1rem;
+    background: var(--bg);
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 3px 3px 6px var(--shadow-dark),
+                -3px -3px 6px var(--shadow-light);
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .meal-input button:hover {
+    transform: translateY(-2px);
+  }
+  

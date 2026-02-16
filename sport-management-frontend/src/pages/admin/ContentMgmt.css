@@ -1,0 +1,87 @@
+.admin-container {
+    display: flex;
+    height: 100vh;
+    background: #f2f2f7;
+  }
+  
+  .admin-main {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .content-table-container {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background: #e0e0e0;
+    box-shadow: inset 8px 8px 16px #bebebe, inset -8px -8px 16px #ffffff;
+  }
+  
+  .content-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .content-table thead {
+    background-color: #d1cfcf;
+    color: #5c4db1;
+  }
+  
+  .content-table th,
+  .content-table td {
+    padding: 12px 16px;
+    text-align: left;
+  }
+  
+  .content-table tbody tr {
+    background: #f8f8f8;
+    transition: 0.3s ease;
+  }
+  
+  .content-table tbody tr:hover {
+    background-color: #e6e6fa;
+  }
+  
+  .status {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 0.85rem;
+  }
+  
+  .status.published {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .status.draft {
+    background-color: #ffeeba;
+    color: #856404;
+  }
+  
+  button {
+    margin-right: 6px;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+  
+  .edit-btn {
+    background-color: #17a2b8;
+    color: white;
+  }
+  
+  .delete-btn {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+  }
+  

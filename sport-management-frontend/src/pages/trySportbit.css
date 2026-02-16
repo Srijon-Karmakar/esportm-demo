@@ -1,0 +1,180 @@
+.streetball-container {
+    display: flex;
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    background-color: wheat; /* Set background color to wheat */
+    position: relative;
+  }
+  .basketball-image {
+    position: absolute;
+    bottom: -35%; /* Position the image at the bottom */
+    left: 50%; /* Center the image horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    width: 60%; /* Set the width of the image */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .left-card {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 3%; /* Position on the left side */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    width: 30%;
+    height: 96%; /* Make the card taller */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.117);
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.24);
+    text-align: center;
+    z-index: 1000;
+    backdrop-filter: blur(50px);
+  }
+  .card-image-container {
+    position: relative;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .card-image {
+    width: 100%;
+    height: auto;
+  }
+  .card-image-text {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: rgb(139, 58, 0);
+    text-align: left;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.163);
+  }
+  .left-card h2 {
+    margin: 10px 0;
+    font-size: 24px;
+    color: #fb5000;
+  }
+  #event-time {
+    padding: 5px;
+    border-radius: 40px;
+    font-size: 15px;
+    color: #0ee80e;
+    background-color: #0daf0833;
+    backdrop-filter: blur(30px);
+    text-align: center;
+  }
+  
+  .left-card p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #000000;
+  }
+  .join-button {
+    padding: 10px 20px;
+    background-color: #ff7b00;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  .join-button:hover {
+    background-color: #000000;
+  }
+  
+
+
+
+
+  .left-card h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #a24e00;
+  }
+  
+  .left-card p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #000000;
+  }
+  
+  .join-button {
+    padding: 10px 20px;
+    background:linear-gradient(to top, #b35900, #eb8545);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  .join-button:hover {
+    background-color: #fcfcfc;
+    color: #000000;
+  }
+  .card-brief {
+    text-align: left;
+  }
+  .card-brief h3 {
+    font-size: 20px;
+    color: #6d3500;
+    margin-bottom: 10px;
+  }
+  .card-brief p {
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+
+  /* 3d model ball  */
+  .basketball-3d {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 300px;
+  }
+  canvas {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* bg video  */
+  .basketball-video-container {
+    position: absolute;
+    bottom: -15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .basketball-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video fills the container */
+  }
+
+  .brand-slogan {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    text-align: right;
+    color: #000000;
+  }
+  
+  .brand-slogan h1 {
+    font-size: 66px;
+    font-weight: bold;
+    /* color: #000000; */
+    margin: 0;
+  }
+  
+  .brand-slogan p {
+    font-size: 24px;
+    color: #000000;
+    margin-top: 10px;
+  }

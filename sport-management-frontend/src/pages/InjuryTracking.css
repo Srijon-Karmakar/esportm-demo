@@ -1,0 +1,147 @@
+.injury-tracker {
+    height: 100vh;
+    width: 100vw;
+    padding: 20px;
+    overflow-x: hidden;
+    transition: 0.3s;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .injury-tracker.light {
+    background: #f0f8ff;
+    color: #111;
+  }
+  
+  .injury-tracker.dark {
+    background: #0c1017;
+    color: #ddd;
+  }
+  
+  .tracker-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    /* margin: 0 auto 30px auto; */
+    padding: 0 20px;
+    margin-top: 50px;
+  }
+  
+  .tracker-header span {
+    font-size: 35px;
+    background: linear-gradient(45deg, #ff6ec4, #7873f5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .tracker-header h1 {
+    font-size: 12px;
+    background: linear-gradient(45deg, #ff6ec4, #7873f5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .header-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    
+  } 
+  .header-left span {
+    font-size: 25px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff6ec4, #7873f5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .header-left h1 {
+    font-size: 13px;
+    margin-top: 4px;
+    color: inherit;
+    text-align: left;
+  }
+  
+  
+  .tracker-controls button {
+    margin-left: 10px;
+    padding: 10px;
+    color: #a840ed;
+    background: rgba(255, 255, 255, 0.06);
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+  }
+  
+  .tracker-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+  .tracker-form {
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .tracker-form input,
+  .tracker-form select,
+  .tracker-form textarea {
+    width: 100%;
+    margin: 12px 0;
+    padding: 10px;
+    border: 1px solid #99999920;
+    border-radius: 15px;
+    background: rgba(57, 57, 57, 0.137);
+    color: inherit;
+  }
+  
+  .tracker-form button {
+    background: linear-gradient(45deg, #ff6ec4, #7873f5);
+    padding: 10px 20px;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(138, 43, 226, 0.5);
+  }
+  
+  .injury-output {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 40px;
+  }
+  
+  .filter-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .injury-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .injury-card {
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 12px;
+    padding: 16px;
+    border-left: 6px solid #888;
+    backdrop-filter: blur(6px);
+  }
+  
+  .injury-card.mild { border-color: #a1f0a1; }
+  .injury-card.moderate { border-color: #f9d976; }
+  .injury-card.severe { border-color: #ff5e5e; }
+  

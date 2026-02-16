@@ -1,0 +1,29 @@
+/* Animations */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: none; }
+}
+.sportbit-fade-in {
+  animation: fade-in 0.25s ease-out;
+}
+
+/* Typing dots */
+.sportbit-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 9999px;
+  background: currentColor;
+  display: inline-block;
+  animation: sportbit-bounce 1s infinite ease-in-out;
+}
+.sportbit-dot:nth-child(2) { animation-delay: 0.15s; }
+.sportbit-dot:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes sportbit-bounce {
+  0%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-4px); }
+}
+
+/* Chip row */
+.sportbit-no-scrollbar::-webkit-scrollbar { display: none; }
+.sportbit-no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }

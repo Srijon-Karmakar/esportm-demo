@@ -1,0 +1,129 @@
+.playerstats-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    /* background: #e0e0e0; */
+  }
+  
+  .playerstats-main {
+    flex: 1;
+    padding: 20px;
+    overflow-x: hidden;
+  }
+  
+  .playerstats-wrapper {
+    margin-top: 20px;
+  }
+  
+  /* Search */
+  .playerstats-search {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .playerstats-search input {
+    padding: 10px;
+    flex: 1;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #fff;
+  }
+  
+  .playerstats-search button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #e0e0e0;
+    box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #fff;
+    cursor: pointer;
+  }
+  
+  /* Summary Cards */
+  .playerstats-summary {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .playerstats-card {
+    flex: 1;
+    padding: 15px;
+    border-radius: 15px;
+    background: #e0e0e0;
+    text-align: center;
+    box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #fff;
+  }
+  
+  /* Table */
+  .playerstats-table-container {
+    margin-bottom: 20px;
+  }
+  
+  .playerstats-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .playerstats-table th,
+  .playerstats-table td {
+    padding: 12px;
+    text-align: center;
+  }
+  
+  .playerstats-table th {
+    background: #d6d6d6;
+  }
+  
+  .playerstats-table tr {
+    background: #e0e0e0;
+    box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #fff;
+  }
+  
+  /* Sections */
+  .playerstats-section {
+    margin-bottom: 20px;
+  }
+  
+  .playerstats-compare {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .playerstats-compare select {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #fff;
+  }
+  
+  .playerstats-compare button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #e0e0e0;
+    box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #fff;
+  }
+  
+  /* Charts Placeholder */
+  .playerstats-charts {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .playerstats-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .playerstats-actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #e0e0e0;
+    box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #fff;
+    cursor: pointer;
+  }
+  

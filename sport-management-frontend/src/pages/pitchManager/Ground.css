@@ -1,0 +1,124 @@
+.ground-container {
+    display: flex;
+    font-family: 'Segoe UI', sans-serif;
+    width:100vw;
+    height: 100vh;
+  }
+  
+  .ground-main {
+    flex-grow: 1;
+    padding: 2rem;
+    background: #e0e5ec;
+    overflow-x: hidden;
+    margin-left: 1rem;
+  }
+  
+  .ground-wrapper {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .ground-filters {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .ground-select, .ground-input, .ground-btn {
+    padding: 0.7rem 1rem;
+    border-radius: 12px;
+    border: none;
+    background: #e0e5ec;
+    box-shadow: inset 6px 6px 12px #c8c9cc, inset -6px -6px 12px #ffffff;
+    font-size: 1rem;
+  }
+  
+  .ground-btn {
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .ground-btn:hover {
+    box-shadow: 6px 6px 12px #c8c9cc, -6px -6px 12px #ffffff;
+  }
+  
+  .ground-btn.small {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.9rem;
+  }
+  
+  .ground-availability-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .ground-card {
+    padding: 1rem;
+    border-radius: 20px;
+    background: #e0e5ec;
+    box-shadow: 8px 8px 16px #c8c9cc, -8px -8px 16px #ffffff;
+    transition: 0.3s;
+  }
+  
+  .ground-card:hover {
+    transform: translateY(-4px);
+  }
+  
+  .ground-card h4 {
+    margin: 0 0 0.5rem;
+  }
+  
+  .ground-legend {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .legend {
+    padding: 0.4rem 0.8rem;
+    border-radius: 10px;
+    color: #fff;
+  }
+  
+  .legend.available {
+    background-color: #4caf50;
+  }
+  
+  .legend.booked {
+    background-color: #f44336;
+  }
+  
+  .legend.maintenance {
+    background-color: #ff9800;
+  }
+  
+  .ground-table-section {
+    margin-bottom: 2rem;
+  }
+  
+  .ground-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #e0e5ec;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 8px 8px 16px #c8c9cc, -8px -8px 16px #ffffff;
+  }
+  
+  .ground-table th, .ground-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .ground-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  

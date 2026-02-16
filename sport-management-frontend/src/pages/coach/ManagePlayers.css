@@ -1,0 +1,129 @@
+.players-container {
+    display: flex;
+    font-family: 'Segoe UI', sans-serif;
+    height: 100vh;
+    width: 100vw;
+
+  }
+  
+  .players-main {
+    flex-grow: 1;
+    padding: 2rem;
+    background: #e0e5ec;
+    overflow-x: hidden;
+  }
+  
+  .players-wrapper {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .players-filters {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  
+  .players-input,
+  .players-select,
+  .players-btn,
+  .players-textarea {
+    padding: 0.7rem 1rem;
+    border: none;
+    border-radius: 12px;
+    background: #e0e5ec;
+    box-shadow: inset 6px 6px 12px #c8c9cc, inset -6px -6px 12px #ffffff;
+    font-size: 1rem;
+  }
+  
+  .players-btn {
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .players-btn:hover {
+    box-shadow: 6px 6px 12px #c8c9cc, -6px -6px 12px #ffffff;
+  }
+  
+  .players-btn.small {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+  
+  .players-btn.danger {
+    background: #ff6b6b;
+    color: white;
+    box-shadow: none;
+  }
+  
+  .players-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .player-card {
+    background: #e0e5ec;
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: 8px 8px 16px #c8c9cc, -8px -8px 16px #ffffff;
+    transition: 0.3s;
+    text-align: center;
+  }
+  
+  .player-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .player-card:hover {
+    transform: translateY(-3px);
+  }
+  
+  .player-actions {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+  
+  .players-form {
+    margin-top: 2rem;
+    background: #e0e5ec;
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 8px 8px 16px #c8c9cc, -8px -8px 16px #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .players-textarea {
+    min-height: 100px;
+    resize: none;
+  }
+  
+  .players-table-section {
+    margin-bottom: 2rem;
+  }
+  
+  .players-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #e0e5ec;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 8px 8px 16px #c8c9cc, -8px -8px 16px #ffffff;
+  }
+  
+  .players-table th,
+  .players-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+  

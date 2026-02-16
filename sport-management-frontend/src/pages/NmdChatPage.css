@@ -1,0 +1,248 @@
+/* src/pages/ChatPage.css */
+.chat-page {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background: #e0e5ec;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.chat-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  overflow: hidden;
+  margin-left: 20px;
+  
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.chat-body {
+  display: flex;
+  height: 100%;
+  gap: 20px;
+}
+
+.chat-list {
+  width: 250px;
+  padding:  20px 10px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-search {
+  padding: 10px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: inset 4px 4px 8px #cbd1d8, inset -4px -4px 8px #f5f8fa;
+  margin-bottom: 15px;
+  background-color: rgb(236, 229, 240);
+}
+
+.manager-items {
+  list-style: none;
+  padding: 0;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.manager-items li {
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 102px;
+  background: #e1e4e8;
+  cursor: pointer;
+  box-shadow: 2px 2px 6px #ccc, -2px -2px 6px #fff;
+  /* width: 90%; */
+  margin: 10px;
+}
+
+.manager-items li.active {
+  background: #e1b0ff;
+  color: rgb(146, 5, 185);
+  font-weight: bold;
+}
+
+.chat-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.chat-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 15px;
+  padding-right: 10px;
+}
+
+.message {
+  max-width: 70%;
+  padding: 12px 16px;
+  border-radius: 14px;
+  margin-bottom: 10px;
+  box-shadow: 4px 4px 10px #cbd1d8, -4px -4px 10px #fff;
+}
+
+.sent {
+  background: #eeeeee;
+  align-self: flex-end;
+}
+
+.received {
+  background: #dcb7ee;
+  align-self: flex-start;
+}
+
+.message small {
+  display: block;
+  margin-top: 5px;
+  font-size: 10px;
+  text-align: right;
+  color: #555;
+}
+
+.chat-input {
+  display: flex;
+  gap: 10px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 14px;
+  font-size: 14px;
+  box-shadow: inset 4px 4px 8px #cbd1d8, inset -4px -4px 8px #f5f8fa;
+  background-color: rgb(217, 207, 227);
+  color: black;
+}
+
+.chat-input button {
+  padding: 0 20px;
+  background: #6fe360;
+  border: none;
+  color: white;
+  border-radius: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.neumorphic {
+  background: #e0e6ec;
+  border-radius: 20px;
+  box-shadow: 8px 8px 16px #9fa3a8, -8px -8px 16px #ffffff;
+}
+
+.neumorphic-btn {
+  background: #e0e5ec;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px #cbd1d8, -5px -5px 10px #f5f8fa;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom scrollbar for chat list */
+.manager-items::-webkit-scrollbar {
+  width: 6px;
+}
+
+.manager-items::-webkit-scrollbar-track {
+  background: #e0e5ec;
+  border-radius: 10px;
+}
+
+.manager-items::-webkit-scrollbar-thumb {
+  background: #b0c4ff;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.manager-items::-webkit-scrollbar-thumb:hover {
+  background: #8ba6ff;
+}
+
+/* For Firefox */
+.manager-items {
+  scrollbar-width: thin;
+  scrollbar-color: #b0c4ff #e0e5ec;
+}
+#send{
+  box-shadow: 0px -10px 10px 0  #d7ffd5, 10px 10px 30px 0 #0107005c ;
+}
+
+/* Update icon button styles */
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #e0e5ec;
+  box-shadow: 4px 4px 8px #cbd1d8, -4px -4px 8px #f5f8fa;
+  transition: all 0.3s ease;
+}
+.icon-btn svg {
+  width: 20px;
+  height: 20px;
+  
+}
+
+.icon-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 6px 6px 10px #cbd1d8, -6px -6px 10px #f5f8fa;
+}
+
+/* Add styles for the icons container */
+.chat-top > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.icon-btn img{
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}

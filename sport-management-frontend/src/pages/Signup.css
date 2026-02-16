@@ -1,0 +1,236 @@
+/* .signup-popup {
+  color: white;
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #0000002c;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: #0000005a;
+  text-align: center;
+}
+
+.signup-popup h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.signup-popup form input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #cccccc00;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.959);
+  color: green;
+}
+
+.signup-popup form button {
+  width: 90%;
+  padding: 10px;
+  background-color: #dff400;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 150px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.signup-popup form button:hover {
+  background-color: #000000;
+  color: #ffe600;
+}
+
+.signup-popup p {
+  margin: 15px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.google-signup-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #db4437;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.google-signup-btn:hover {
+  background-color: #c23321;
+}
+
+
+.home-icon {
+  position: absolute;
+  top: 5%;
+  left: 96%;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  fill: #ffffff;
+  transition: fill 0.2s;
+}
+
+.home-icon:hover {
+  fill: #dff400;
+} */
+
+
+
+/* Wrapper */
+.signup-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #e0e5ec;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  right: 35%;
+}
+
+/* Signup Box */
+.signup-popup {
+  width: 450px;
+  padding: 30px 35px;
+  border-radius: 20px;
+  background: #e0e5ec;
+  box-shadow: 8px 8px 16px #cbd1d8, -8px -8px 16px #ffffff;
+  position: relative;
+  text-align: center;
+  animation: fadeIn 0.4s ease-in-out;
+  margin-top: 0px;
+}
+
+/* Neumorphic inputs */
+.input-field {
+  width: 100%;
+  padding: 14px;
+  font-size: 12px;
+  margin-bottom: 14px;
+  border: none;
+  border-radius: 12px;
+  background: #e0e5ec;
+  box-shadow: inset 4px 4px 8px #cbd1d8, inset -4px -4px 8px #ffffff;
+  transition: 0.3s ease;
+  margin-top: 5px !important;
+  color: rgb(0, 78, 141);
+}
+
+.input-field:focus {
+  outline: none;
+  box-shadow: inset 2px 2px 5px #cbd1d8, inset -2px -2px 5px #ffffff;
+  color: rgb(0, 62, 128);
+}
+
+/* Button */
+.neumorphic-btn-signup {
+  width: 60%;
+  padding: 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 12px;
+  background: #e0e5ec;
+  box-shadow: 6px 6px 12px #cbd1d8, -6px -6px 12px #ffffff;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  margin-top: 2px;
+  color: purple;
+  font-weight: bold;
+}
+
+.neumorphic-btn:hover {
+  box-shadow: inset 4px 4px 8px #cbd1d8, inset -4px -4px 8px #ffffff;
+}
+
+/* Gradient Title */
+.gradient-text {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+/* SVG Home Button */
+.home-icon {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 28px;
+  height: 28px;
+  fill: #444;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.home-icon:hover {
+  transform: scale(1.1);
+}
+.login-text {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #444;
+  text-align: center;
+}
+
+.login-link {
+  color: #6a11cb;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+.signup-wrapper h2{
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-top: 7px;
+}
+.back-icon {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 24px;
+  height: 24px;
+  color: #444;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.back-icon:hover {
+  transform: scale(1.1);
+  color: #6a11cb;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .signup-popup {
+    width: 90%;
+    padding: 25px 20px;
+  }
+
+  .gradient-text {
+    font-size: 20px;
+  }
+}

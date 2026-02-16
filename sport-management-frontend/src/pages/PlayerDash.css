@@ -1,0 +1,253 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f4f7fa;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  /* background-color: #1d850f; */
+  background: linear-gradient(135deg, #3ca111, #0c4d05);
+  color: #ffffff;
+  display: flex;
+  flex-direction:column ;
+  padding: 20px 10px;
+  overflow-y: auto;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+.logo-icon {
+  font-size: 24px;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+}
+
+.sidebar-nav li {
+  margin: 15px 0;
+}
+
+.sidebar-nav li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar-nav li.active a{
+  background-color: rgba(0, 0, 0, 0.467);
+  padding: 8px 12px;
+  border-radius: 40px;
+}
+.sidebar-nav li a:hover {
+  /* background-color: #1eff003d; */
+  /* padding: 8px 12px; */
+  border-radius: 4px;
+  color: yellow;
+}
+
+/* Main Content */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+  height: 100vh;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  font-size: 10px;
+  color: #209d09;
+  background: linear-gradient(90deg, #afd600, #052c00); /* Gradient colors */
+  -webkit-background-clip: text; /* Clip the gradient to the text */
+  -webkit-text-fill-color: transparent; /* Make the text transparent to show the gradient */
+  color: transparent;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* color: #1d850f; */
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Section Styles */
+.content-section {
+  display: none;
+}
+
+.active-section {
+  display: block;
+}
+
+.content-section h2 {
+  margin-bottom: 15px;
+  color: #0a2463;
+}
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.stat-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #1d850f;
+}
+
+.stat-icon {
+  font-size: 24px;
+  color: #0a2463;
+  margin-bottom: 10px;
+}
+
+/* Profile Form */
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.input-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.input-group input,
+.input-group textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* KPI Styles */
+.kpi-list {
+  list-style: none;
+  padding: 0;
+}
+
+.kpi-bar {
+  height: 10px;
+  background-color: #eee;
+  border-radius: 5px;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.kpi-bar div {
+  height: 100%;
+  background-color: #0a2463;
+}
+
+/* Club Cards */
+.club-listing {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.club-card {
+  background-color: #ffffff;
+  padding: 20px;
+  flex: 1 1 300px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Video Upload */
+#videoUpload {
+  display: block;
+  margin-top: 10px;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #0a2463;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #1c3f87;
+  color: white;
+}
+
+/* Responsive Scroll */
+.main-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.main-content::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+#logout{
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

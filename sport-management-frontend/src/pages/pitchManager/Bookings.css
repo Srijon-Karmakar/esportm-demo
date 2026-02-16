@@ -1,0 +1,159 @@
+.bookings-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: #e0e5ec;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .bookings-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .bookings-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Neumorphic Card */
+  .bookings-card {
+    background: #e0e5ec;
+    border-radius: 16px;
+    box-shadow: 7px 7px 15px #babecc, -7px -7px 20px #ffffff;
+    padding: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Stats */
+  .bookings-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .bookings-stat-box {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+  }
+  
+  .bookings-stat-box h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .bookings-stat-box p {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Form Grid */
+  .bookings-form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .bookings-input, .bookings-select, .bookings-textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #e0e5ec;
+    box-shadow: inset 3px 3px 6px #babecc, inset -3px -3px 6px #ffffff;
+    font-size: 14px;
+    resize: vertical;
+  }
+  
+  .bookings-textarea {
+    min-height: 60px;
+  }
+  
+  .bookings-btn {
+    background: #e0e5ec;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #babecc, -5px -5px 10px #ffffff;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .bookings-btn:hover {
+    box-shadow: inset 2px 2px 5px #babecc, inset -2px -2px 5px #ffffff;
+  }
+  
+  /* Table Section */
+  .bookings-table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .bookings-controls {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .bookings-table-wrapper {
+    overflow-x: auto;
+  }
+  
+  .bookings-data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .bookings-data-table th, .bookings-data-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    background: #e0e5ec;
+    box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #ffffff;
+  }
+  
+  .bookings-data-table th {
+    font-weight: bold;
+  }
+  
+  /* Schedule Placeholder */
+  .bookings-schedule-placeholder {
+    padding: 40px;
+    text-align: center;
+    border: 2px dashed #babecc;
+    border-radius: 10px;
+    color: #555;
+    background: #e0e5ec;
+    box-shadow: inset 4px 4px 8px #babecc, inset -4px -4px 8px #ffffff;
+  }
+  
+  /* Export Buttons */
+  .bookings-export-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .full-width {
+    flex: 1;
+  }
+  
+  /* Button Sizes */
+  .small {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+  
+  .extra-small {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+  

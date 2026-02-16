@@ -1,0 +1,126 @@
+.analytics-container {
+    display: flex;
+    font-family: 'Segoe UI', sans-serif;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .analytics-main {
+    flex-grow: 1;
+    padding: 2rem;
+    background: #e0e5ec;
+    overflow-x: hidden;
+  }
+  
+  .analytics-wrapper {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .analytics-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .analytics-input,
+  .analytics-select,
+  .analytics-btn,
+  .analytics-wrapper textarea {
+    padding: 0.7rem 1rem;
+    border: none;
+    border-radius: 12px;
+    background: #e0e5ec;
+    box-shadow: inset 6px 6px 12px #c8c9cc, inset -6px -6px 12px #ffffff;
+    font-size: 1rem;
+  }
+  
+  .analytics-btn {
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .analytics-btn:hover {
+    box-shadow: 6px 6px 12px #c8c9cc, -6px -6px 12px #ffffff;
+  }
+  
+  .analytics-kpis {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .kpi-card {
+    text-align: center;
+    background: #e0e5ec;
+    border-radius: 20px;
+    padding: 1.5rem;
+    box-shadow: 8px 8px 16px #c8c9cc, -8px -8px 16px #ffffff;
+  }
+  
+  .kpi-card h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .kpi-card p {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .analytics-charts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .chart-card {
+    background: #e0e5ec;
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: 8px 8px 16px #c8c9cc, -8px -8px 16px #ffffff;
+  }
+  
+  .chart-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 0.5rem;
+  }
+  
+  .analytics-table-section {
+    margin-bottom: 2rem;
+  }
+  
+  .analytics-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #e0e5ec;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 8px 8px 16px #c8c9cc, -8px -8px 16px #ffffff;
+  }
+  
+  .analytics-table th,
+  .analytics-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .analytics-notes {
+    background: #e0e5ec;
+    border-radius: 20px;
+    padding: 1.5rem;
+    box-shadow: 8px 8px 16px #c8c9cc, -8px -8px 16px #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .analytics-notes textarea {
+    min-height: 100px;
+    resize: none;
+  }
+  

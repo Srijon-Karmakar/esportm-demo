@@ -1,0 +1,20 @@
+/* Two sliding panels that cover & reveal the screen */
+.pgx-overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 52vh;
+  background: linear-gradient(135deg, #0ea5e9 0%, #60a5fa 50%, #a5b4fc 100%); /* sky → blue */
+  z-index: 9999;
+  transform: translateZ(0);
+  will-change: transform;
+  pointer-events: none;
+}
+
+.pgx-overlay--top { top: 0; }
+.pgx-overlay--bottom { bottom: 0; }
+
+/* Optional: classy body bg so the flash between routes never looks harsh */
+body {
+  background: linear-gradient(180deg, #ffffff 0%, #eaf6ff 50%, #fff9db 100%); /* white → sky → soft yellow */
+}

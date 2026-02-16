@@ -1,0 +1,51 @@
+.neumorphic-footer {
+    background: #e0e5ec;
+    box-shadow: inset 0px 5px 10px #babecc, inset 0px -5px 10px #ffffff;
+    padding: 40px 10%;
+    color: #333;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .footer-center ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-center ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.2s ease;
+  }
+  
+  .footer-center ul li a:hover {
+    color: #6c63ff;
+  }
+  
+  .gradient-text {
+    background: linear-gradient(to right, #6c63ff, #9a8cff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #ccc;
+    font-size: 0.9rem;
+  }
+  
