@@ -357,12 +357,12 @@ const styles = {
     fontFamily: 'Arial, sans-serif',
     overflow: 'hidden',
   },
-  mainContent: {
-    flex: 1,
-    padding: '20px',
-    overflow: 'auto', // Enable vertical scrolling
-    maxHeight: '100vh', // Prevent content from exceeding viewport height
-  },
+  // mainContent: {
+  //   flex: 1,
+  //   padding: '20px',
+  //   overflow: 'auto', 
+  //   maxHeight: '100vh', 
+  // },
 
 
   sidebar: {
