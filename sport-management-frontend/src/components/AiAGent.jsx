@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from '../api/axios'; // your axios base is http://localhost:5000  
-import './AIAgent.css';
+import './AiAgent.css';
 
 export default function AIAgent() {
   const [tab, setTab] = useState('recommend');
